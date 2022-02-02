@@ -2,3 +2,4 @@ sklearn==0.0
 pandas==1.4.0
 imblearn==0.0
 ipykernel==6.8.0
+matplotlib==3.5.1
