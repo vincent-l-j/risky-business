@@ -1,5 +1,5 @@
 # Risky Business
- 
+
 ![Credit Risk](image/credit-risk.jpg)
 
 ## Background
