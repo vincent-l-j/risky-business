@@ -18,13 +18,14 @@ The imbalanced-learn and Scikit-learn python libraries will be used to build and
 
 - - -
 
-## Files
-
-[Resampling Starter Notebook](src/credit_risk_resampling.ipynb)
-
-[Ensemble Starter Notebook](src/credit_risk_ensemble.ipynb)
-
-[Lending Club Loans Data](src/Resources/LoanStats_2019Q1.csv.zip)
+## Installation via [Anaconda](https://www.anaconda.com/products/individual)
+```bash
+# git clone this repo
+cd path/to/risky-business
+conda create -n risky_business python=3.9.7
+conda activate risky_business
+pip install -r requirements.txt
+```
 
 - - -
 
