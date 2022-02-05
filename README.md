@@ -1,4 +1,4 @@
-# Unit 11 - Risky Business
+# Risky Business
  
 ![Credit Risk](image/credit-risk.jpg)
 
