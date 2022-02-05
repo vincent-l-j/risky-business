@@ -28,53 +28,32 @@ The imbalanced-learn and Scikit-learn python libraries will be used to build and
 
 - - -
 
-## Instructions
+## Summary of Findings
 
 ### Resampling
 
-Use the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to resample the LendingClub data and build and evaluate logistic regression classifiers using the resampled data.
+The [imbalanced learn](https://imbalanced-learn.readthedocs.io) library was used to resample the LendingClub data.
+The raw and resampled data were used to build and evaluate logistic regression classifiers.
+One model was a Simple Logistic Regression without resampling the data.
+The data was oversampled using the `Naive Random Oversampler` and `SMOTE` algorithms.
+The data was undersampled using the `Cluster Centroids` algorithm.
+The data was oversampled and undersampled using a combination `SMOTEENN` algorithm.
 
-To begin:
+Each model calculated the `balanced accuracy score`, displayed the `confusion matrix` and printed the `imbalanced classification report`.
 
-1. Read the CSV into a DataFrame.
+#### Results
+- Which model had the best balanced accuracy score?
 
-2. Split the data into Training and Testing sets.
+SMOTEENN and Naive Random Oversampling tied for the best
+balanced accuracy score: 0.9934649587814939
 
-3. Scale the training and testing data using the `StandardScaler` from `sklearn.preprocessing`.
+- Which model had the best recall score?
 
-4. Use the provided code to run a Simple Logistic Regression:
-    * Fit the `logistic regression classifier`.
-    * Calculate the `balanced accuracy score`.
-    * Display the `confusion matrix`.
-    * Print the `imbalanced classification report`.
+All models have an average recall score of 0.99
 
-Next you will:
+- Which model had the best geometric mean score?
 
-1. Oversample the data using the `Naive Random Oversampler` and `SMOTE` algorithms.
-
-2. Undersample the data using the `Cluster Centroids` algorithm.
-
-3. Over- and undersample using a combination `SMOTEENN` algorithm.
-
-
-For each of the above, you will need to:
-
-1. Train a `logistic regression classifier` from `sklearn.linear_model` using the resampled data.
-
-2. Calculate the `balanced accuracy score` from `sklearn.metrics`.
-
-3. Display the `confusion matrix` from `sklearn.metrics`.
-
-4. Print the `imbalanced classification report` from `imblearn.metrics`.
-
-
-Use the above to answer the following questions:
-
-* Which model had the best balanced accuracy score?
->
-* Which model had the best recall score?
->
-* Which model had the best geometric mean score?
+All models have an average geometric mean score of 0.99
 
 ### Ensemble Learning
 
